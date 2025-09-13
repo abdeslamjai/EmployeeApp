@@ -1,0 +1,1 @@
+export type Departement = 'IT' | 'MARKETING' | 'HR';
