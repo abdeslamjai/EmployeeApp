@@ -1,17 +1,17 @@
-<!-- <h1 class="page-title">Contact List</h1> -->
-
 <!-- Details -->
+
+ @let empl = employee();
 <div class="details">
   <div class="details-row">
     <div class="label">Name :</div>
-    <div class="value">{{employee.name}}</div>
+    <div class="value">{{ empl.name }}</div>
   </div>
   <div class="details-row">
     <div class="label">Level :</div>
-    <div class="value">{{employee.level | level}}</div>
+    <div class="value">{{ empl.level | level }}</div>
   </div>
   <div class="details-row">
     <div class="label">Department :</div>
-    <div class="value">{{employee.departement}}</div>
+    <div class="value">{{ empl.departement }}</div>
   </div>
 </div>

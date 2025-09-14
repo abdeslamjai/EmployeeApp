@@ -1,6 +1,6 @@
-import { Component } from '@angular/core';
-import { Employee } from '../models/employee.model';
+import { Component, input, output } from '@angular/core';
 import { LevelPipe } from '../level.pipe';
+import { Employee } from '../models/employee.model';
 
 @Component({
   selector: 'app-card',
@@ -8,12 +8,8 @@ import { LevelPipe } from '../level.pipe';
   templateUrl: './card.component.html',
   styleUrl: './card.component.scss'
 })
+
 export class CardComponent {
-  employee : Employee = {
-    _id:'675173e704ea0d53bbcdb314',
-    name:'Abdeslam',
-    departement:'IT',
-    level:'S'
-  }
+  employee = input.required<Employee>();
 
 }
