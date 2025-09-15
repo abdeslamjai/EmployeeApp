@@ -1,6 +1,7 @@
 import { Component, input, output } from '@angular/core';
-import { LevelPipe } from '../level.pipe';
-import { Employee } from '../models/employee.model';
+
+import { Employee } from '../../models/employee.model';
+import { LevelPipe } from '../../pipes/level.pipe';
 
 @Component({
   selector: 'app-card',

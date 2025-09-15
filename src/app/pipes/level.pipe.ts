@@ -1,5 +1,6 @@
-import { Level } from './models/level.model';
+
 import { Pipe, PipeTransform } from '@angular/core';
+import { Level } from '../models/level.model';
 
 const LEVELS : Record<Level, string> = {
   "J": "Junior",
